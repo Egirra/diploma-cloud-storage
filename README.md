@@ -15,3 +15,4 @@
 Настройки приложения хранятся в файле application.properties.
 
 Информация о пользователях и файлах хранится в БД. Для разработки использовалась СУБД PostgreSQL.
+user_name: user  password: password
