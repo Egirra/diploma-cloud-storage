@@ -33,7 +33,7 @@ public class JwtProvider {
         final Instant accessExpirationInstant = now.plusMinutes(5).atZone(ZoneId.systemDefault()).toInstant();
         final Date accessExpiration = Date.from(accessExpirationInstant);
         return Jwts.builder()
-                .setSubject(user.getLogin())
+                .setSubject(user.getUserName())
                 .setExpiration(accessExpiration)
                 .signWith(jwtAccessSecret)
                 .compact();
